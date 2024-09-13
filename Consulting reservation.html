@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bless Hospital</title>
+    <link rel="stylesheet" href="./stylesheet 2.css">
+</head>
+<body>
+    <header class="header">
+        <section id="logo">
+            <a href="home.html">
+                <img id="logo_img" src="./image2/Bless Hospital.png" alt="bless Hospital" >
+            </a>
+
+        </section>
+        <div class="hamburger" id="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav id="nav_bar">
+            <a href="home.html">Home</a>
+            <a href="About us.html">About Us</a>
+            <a href="Services.html">Services</a>
+            <a href="Doctor.html">Doctor</a>
+            <a href="Consulting reservation.html">Consulting reservation</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="pharmacy 2.html">Pharmacy</a>
+            
+        </nav>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const hamburger = document.getElementById('hamburger');
+                const navBar = document.getElementById('nav_bar');
+        
+                hamburger.addEventListener('click', () => {
+                    navBar.classList.toggle('active');
+                });
+            });
+        </script>
+    </header>
+    <main id="Consultants_reservation">
+        <h2>Consultants reservation</h2>
+        <form id="consultants_form">
+            <label for="fname">Hospital Branch Name *
+                <select name="Branch">
+                    <option value="no_value">Select Branch Name</option>
+                    <option value="Kandy">Kandy</option>
+                    <option value="Colombo">Colombo</option>
+                    <option value="Gampha">Gampha</option>
+
+                </select>
+            </label>
+            <label for="fname">Doctor Name *
+                <select name="Doctor_name">
+                    <option value="no_value">Select Doctor</option>
+                    <option value="1">Dr.George</option>
+                    <option value="2">Dr.Brian</option>
+                    <option value="3">Dr.Stephen</option>
+                    <option value="4">Dr.Jeffery</option>
+                    <option value="5">Dr.Daniel</option>
+                    <option value="6">Dr.Robert</option>
+                    <option value="7">Dr.Monika</option>
+                    <option value="8">Dr.Christopher</option>
+                    <option value="9">Dr.Pete</option>
+                    <option value="10">Dr.Jane Smith</option>
+
+                </select>
+            </label>
+            <label for="fname">Speciality *
+                <select name="Branch">
+                    <option value="no_value">Select Speciality</option>
+                    <option value="1">Consultant Surgical Gastroenterologist</option>
+                    <option value="2">Cardio Thoracis</option>
+                    <option value="3">Neurosurgery</option>
+                    <option value="4">A hematologisist</option>
+                    <option value="5">A Consultant physician</option>
+                    <option value="6">Dermatology</option>
+                    <option value="7">Oncologist-cancer specialist</option>
+                    <option value="8">Family medicine doctor</option>
+                    <option value="9">Ophthalmologists</option>
+                    
+
+
+                </select>
+            </label>
+
+            <label for="fname2">Full Name:</label>
+            <input type="text" id="fname2" name="fname2"  placeholder="Full Name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"placeholder="Email">
+            <label for="Number">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+            <br>
+            <label for="date">Date:</label>
+            <input type="date" id="date" placeholder="MM/DD">
+            <br>
+            <div class="consistently_button"><button type="reset">Reset</button>   <button type="submit">Submit</button></div>
+            
+        </form>
+   
+    </main>
+    <footer>
+        <section id="logo2">
+            <img id="logo2_img" src="./image2/Bless Hospital.png" alt="bless Hospital">
+        </section>
+
+        <section id="footer">
+            <div class="linlk"><h4>Quick Link</h4>
+                <a href="home.html">Home</a>
+                <a href="About us.html">About Us</a>
+                <a href="Services.html">Services</a>
+                <a href="Doctor.html">Doctor</a>
+                <a href="Consulting reservation.html">Consulting reservation</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="pharmacy 2.html">Pharmacy</a>
+    
+            
+            </div>
+           
+            <div class="contact"><h4>Contact Us</h4>
+                <ul>
+                    <li>email- info@bleshospital.lk</li>
+                    <li>tel-+9411-3671111</li>
+                    <li>Address-19/B,National park rd,
+                        Kandy,Sri lanka</li>
+            </div>
+            <div class="following"><h4>Follow us</h4>
+                <ul><li>Instagram</li>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>    
+        </section>
+        <p>&copy;2024 Bless Hospital Pvt Ltd</p>
+
+       
+    </footer>
+    
+</body>
+</html>
